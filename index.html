@@ -57,42 +57,51 @@
 
         /* Header & Logo */
         header {
-            margin-bottom: 60px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
 
         .logo-container {
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .arabic-logo {
             font-family: 'Noto Sans Arabic', sans-serif;
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             color: var(--gold);
-            margin-bottom: -10px;
-            letter-spacing: 2px;
+            margin-bottom: 2px;
+            letter-spacing: 1px;
+            line-height: 1.1;
         }
 
         .english-logo {
-            font-size: 2.8rem;
+            font-size: 2.4rem;
             font-weight: 900;
-            letter-spacing: 5px;
+            letter-spacing: 2px;
             color: var(--text-color);
-            position: relative;
+            line-height: 1.05;
         }
+
 
         .english-logo span {
             color: var(--gold);
         }
 
         .tagline {
-            font-size: 0.9rem;
-            text-transform: lowercase;
-            letter-spacing: 3px;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            margin-top: 8px;
+            display: block;
             border-top: 1px solid #444;
             border-bottom: 1px solid #444;
-            padding: 4px 0;
-            display: inline-block;
-            margin-top: 10px;
+            width: fit-content;
         }
 
         /* Hero Section */
@@ -1063,6 +1072,28 @@
                 height: 20px;
             }
         }
+        @media (max-width: 600px){
+
+        header{
+            margin-bottom: 25px;
+        }
+
+        .arabic-logo{
+            font-size: 1.25rem;
+        }
+
+        .english-logo{
+            font-size: 1.55rem;
+            letter-spacing: 1.5px;
+        }
+
+        .tagline{
+            font-size: 0.72rem;
+            padding: 3px 8px;
+            margin-top: 6px;
+        }
+        }
+
     </style>
 
     <!-- Structured Data for SEO -->
